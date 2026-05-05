@@ -22,8 +22,8 @@ import android.util.TypedValue;
 static boolean fullModify = getBoolean("msg_edit_config", "fullModify", true);
 static Map<Long, String> modifiedRecords = new HashMap<>();
 
-addMenuItem("伪造消息(本地)", "menuModifyMsgNTForce");
-addItem(fullModify ? "完整内存修改(开)" : "完整内存修改(关)", "toggleFullModify");
+addMenuItem("修改消息(本地)", "menuModifyMsgNTForce");
+addItem("完整内存修改 开/关", "toggleFullModify");
 addItem("撤销全部文本修改", "undoAllModifications");
 
 void toggleFullModify(int chatType, String peerUin, String name) {
@@ -93,7 +93,7 @@ void menuModifyMsgNTForce(Object mData) {
 
         final EditText et = new EditText(act);
         et.setText(oldText);
-        et.setHint("请输入伪造内容...");
+        et.setHint("请输入修改内容...");
         et.setTextSize(15);
         et.setTextColor(Color.parseColor("#333333"));
         et.setHintTextColor(Color.parseColor("#A8A8A8"));

@@ -1,2 +1,9 @@
 # QQMsgEditor
-基于Qfun的消息编辑脚本
+
+**English** | [中文](README.zh-CN.md)
+
+A QQ message editor plugin built on the QFun framework.
+
+## License
+
+MIT
